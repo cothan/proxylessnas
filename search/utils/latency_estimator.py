@@ -29,9 +29,9 @@ def download_url(url, model_dir='~/.torch/proxyless_nas', overwrite=False):
 class LatencyEstimator(object):
     def __init__(self, url='https://file.lzhu.me/projects/proxylessNAS/LatencyTools/mobile_trim.yaml'):
         fname = download_url(url, overwrite=True)
-
+        print(fname)
         with open(fname, 'r') as fp:
-            self.lut = yaml.load(fp)
+            self.lut = yaml.safe_load(fp)
 
     @staticmethod
     def repr_shape(shape):

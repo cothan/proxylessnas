@@ -78,7 +78,7 @@ class ImagenetDataProvider(DataProvider):
     @property
     def save_path(self):
         if self._save_path is None:
-            self._save_path = '/dataset/imagenet'
+            self._save_path = '/scratch/dnguye69/proxylessnas/dataset/tiny-imagenet-200/'
         return self._save_path
 
     @property

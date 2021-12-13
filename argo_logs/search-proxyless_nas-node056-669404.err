@@ -1,0 +1,3 @@
+Downloading: "https://file.lzhu.me/projects/proxylessNAS/LatencyTools/mobile_trim.yaml" to /home/dnguye69/.torch/proxyless_nas/file.lzhu.me/projects/proxylessNAS/LatencyTools/mobile_trim.yaml
+/scratch/dnguye69/proxylessnas/search/utils/pytorch_utils.py:34: UserWarning: Implicit dimension choice for log_softmax has been deprecated. Change the call to include dim=X as an argument.
+  return torch.mean(torch.sum(- soft_target * logsoftmax(pred), 1))

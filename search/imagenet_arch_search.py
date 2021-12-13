@@ -40,9 +40,9 @@ parser.add_argument('--lr_schedule_type', type=str, default='cosine')
 # lr_schedule_param
 
 parser.add_argument('--dataset', type=str, default='imagenet', choices=['imagenet'])
-parser.add_argument('--train_batch_size', type=int, default=256)
-parser.add_argument('--test_batch_size', type=int, default=1000)
-parser.add_argument('--valid_size', type=int, default=50000)
+parser.add_argument('--train_batch_size', type=int, default=128)
+parser.add_argument('--test_batch_size', type=int, default=500)
+parser.add_argument('--valid_size', type=int, default=5000)
 
 parser.add_argument('--opt_type', type=str, default='sgd', choices=['sgd'])
 parser.add_argument('--momentum', type=float, default=0.9)  # opt_param
@@ -56,7 +56,7 @@ parser.add_argument('--init_div_groups', action='store_true')
 parser.add_argument('--validation_frequency', type=int, default=1)
 parser.add_argument('--print_frequency', type=int, default=10)
 
-parser.add_argument('--n_worker', type=int, default=32)
+parser.add_argument('--n_worker', type=int, default=24)
 parser.add_argument('--resize_scale', type=float, default=0.08)
 parser.add_argument('--distort_color', type=str, default='normal', choices=['normal', 'strong', 'None'])
 
